@@ -1,0 +1,16 @@
+*, /* Add in pseudo elements as well in universal declaration */
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* best to set root font size to percentage of root font size (16px) so easy to divide and also
+    easy for users who choose to increase font size for easy reading. Don't set to px but set to percentage of root font size*/
+}
+
+body {
+    box-sizing: border-box; /*Good practice for CSS look at * selector above. It inherits*/
+}
